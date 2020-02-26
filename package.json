@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/godmode97/webpack-learning-materials#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   },
