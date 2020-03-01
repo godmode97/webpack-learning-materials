@@ -1,3 +1,44 @@
+#root {
+  height: 100vh;
+  background-color: #21232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > div {
+  text-align: center;
+}
+
+#root img {
+  height: 30vh;
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+}
+
+body, h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
-  color: goldenrod
+  color: #61dafb;
+  transform: rotate(360deg);
+}
+
+
+@keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
